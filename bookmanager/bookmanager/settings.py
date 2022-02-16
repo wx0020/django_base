@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # 配置应用 'book'
+    # 'book.apps.AppConfig',
+    'book',
 ]
 
 MIDDLEWARE = [
@@ -102,9 +106,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
-
-LANGUAGE_CODE = 'en-us'
-
+# 设置语音
+LANGUAGE_CODE = 'zh-Hans'#'en-us'
+# 设置时区
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
