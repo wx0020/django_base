@@ -12,4 +12,10 @@ from django.http import HttpResponse
 
 def index(request):
 
-    return HttpResponse('ok')
+    # return HttpResponse('ok')
+    # 渲染 参数1 。请求。 模板名称
+
+    context = {
+        'name' : '马上双11，点击有惊喜'
+    }
+    return render(request,'book/index.html',context=context)
